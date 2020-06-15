@@ -72,7 +72,7 @@ function github_card(obj){
   card_info.appendChild(name);
   card_info.appendChild(user_name);
   card_info.appendChild(location);
-  p1.appendChild(github_address); 
+ 
   card_info.appendChild(p1);
   card_info.appendChild(followers);
   card_info.appendChild(following);
@@ -92,7 +92,7 @@ name.style.fontSize="3.3rem";
 user_name.textContent="Username: "+obj.login;
 location.textContent="location:"+obj.location;
 p1.textContent="Profile:";
-
+p1.appendChild(github_address); 
 //github_address.setAttribute('href',obj.html_url);
 //github_address.setAttribute('textContent', "hi");
 
